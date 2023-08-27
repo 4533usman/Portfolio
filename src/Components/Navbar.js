@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false)
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
     return (
         <div className='flex justify-between items-center px-20 py-3'>
             <div className='text-white font-bold'>
@@ -19,12 +23,22 @@ const Navbar = () => {
                     </div>
                 </nav>
             </div>
-            <div>
+            <div className='flex justify-center gap-5 items-center'>
                 <button className='bg-[#12121d] rounded-2xl px-3 py-3 text-white font-semibold text-sm flex justify-between items-center gap-3'>
                     <ion-icon className="text-xl" name="download-outline"></ion-icon>
                     Download Resume
                 </button>
-                
+                <div className='text-5xl text-white font-semibold'>
+                    <button onClick={toggleMenu}>
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+            <div className={`md:flex space-x-4 ${isOpen ? 'block' : 'hidden'}`}>
+                <a href="#" className="text-white">Home</a>
+                <a href="#" className="text-white">About</a>
+                <a href="#" className="text-white">Portfolio</a>
+                <a href="#" className="text-white">Contact</a>
             </div>
         </div>
     )
