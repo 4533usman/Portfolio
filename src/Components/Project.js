@@ -1,13 +1,11 @@
 import React from 'react'
 import Navbar from './Navbar'
 import PortfolioImage from '../Images/Portfolio.png'
-
-const About = () => {
+const Project = () => {
     return (
-        // <div className=' bg-gradient-to-r from-cyan-500 to-blue-500 w-full'>
         <div className='bg-gradient-to-r from-violet-700 to-violet-500'>
             <Navbar />
-            <p className='text-center mt-10 text-5xl font-semibold text-white'>ABOUT</p>
+            <p className='text-center mt-10 text-5xl font-semibold text-white'>PROJECTS</p>
             <p className='text-center text-2xl mb-10 text-white'>________</p>
             <div>
                 <div className='flex px-2 md:px-10  justify-around items-center mb-10 flex-col md:flex-row gap-4 md:gap-0 text-center text-white'>
@@ -53,33 +51,8 @@ const About = () => {
                 </div>
 
             </div>
-            <p className='text-center mt-10 text-3xl font-semibold text-white'>MY SkILLS</p>
-            <p className='text-center text-xl mb-10 text-white'>________</p>
-            <div className='px-2 md:px-10 flex  items-center gap-5'>
-                <div className='grow'>
-                    <p className='font-semibold text-white mb-2'>HTML</p>
-                    <div class=" bg-neutral-200 dark:bg-neutral-600">
-                        <div
-                            class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
-                            style={{ width: "99%" }}>
-                            99%
-                        </div>
-                    </div>
-                </div>
-                <div className='grow'>
-                    <p className='font-semibold text-white mb-2'>CSS</p>
-                    <div class=" bg-neutral-200 dark:bg-neutral-600 ">
-                        <div
-                            class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
-                            style={{ width: "99%" }}>
-                            99%
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     )
 }
 
-export default About
+export default Project

@@ -18,7 +18,7 @@ const Navbar = () => {
                             <ul className='flex justify-evenly items-center mx-10 font-semibold text-white cursor-pointer'>
                                 <li className=' transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3'><Link to='/'>Home</Link></li>
                                 <li className=' transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3'><Link to='/about'>About</Link></li>
-                                <li className=' transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3'><Link to='/projects'>Projects</Link></li>
+                                <li className=' transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3'><Link to='/project'>Projects</Link></li>
                                 <li className=' transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3'><Link to='/contact'>Contact</Link></li>
                             </ul>
                         </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
                 </button>
                 <Link to="/" className="transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3">Home</Link>
                 <Link to="/about" className="transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3">About</Link>
-                <Link to="/projects" className="transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3">Projects</Link>
+                <Link to="/project" className="transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3">Projects</Link>
                 <Link to="/contact" className="transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3">Contact</Link>
             </div>
         </>
