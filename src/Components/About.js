@@ -55,29 +55,113 @@ const About = () => {
             </div>
             <p className='text-center mt-10 text-3xl font-semibold text-white'>MY SkILLS</p>
             <p className='text-center text-xl mb-10 text-white'>________</p>
-            <div className='px-2 md:px-10 flex  items-center gap-5'>
+            <div className='flex flex-col md:flex-row px-2 md:px-10 gap-0 md:gap-5'>
                 <div className='grow'>
-                    <p className='font-semibold text-white mb-2'>HTML</p>
-                    <div class=" bg-neutral-200 dark:bg-neutral-600">
-                        <div
-                            class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
-                            style={{ width: "99%" }}>
-                            99%
+                    <div>
+                        <p className='font-semibold text-white my-2'>HTML</p>
+                        <div class=" bg-neutral-200 dark:bg-neutral-600">
+                            <div
+                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                style={{ width: "99%" }}>
+                                99%
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='font-semibold text-white my-2'>CSS</p>
+                        <div class=" bg-neutral-200 dark:bg-neutral-600 ">
+                            <div
+                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                style={{ width: "99%" }}>
+                                99%
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='font-semibold text-white my-2'>Bootstrap</p>
+                        <div class=" bg-neutral-200 dark:bg-neutral-600 ">
+                            <div
+                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                style={{ width: "99%" }}>
+                                99%
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='font-semibold text-white my-2'>MUI</p>
+                        <div class=" bg-neutral-200 dark:bg-neutral-600 ">
+                            <div
+                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                style={{ width: "99%" }}>
+                                99%
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='font-semibold text-white my-2'>Tailwind CSS</p>
+                        <div class=" bg-neutral-200 dark:bg-neutral-600 ">
+                            <div
+                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                style={{ width: "99%" }}>
+                                99%
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className='grow'>
-                    <p className='font-semibold text-white mb-2'>CSS</p>
-                    <div class=" bg-neutral-200 dark:bg-neutral-600 ">
-                        <div
-                            class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
-                            style={{ width: "99%" }}>
-                            99%
+
+                    <div>
+                        <p className='font-semibold text-white my-2'>JavaScript</p>
+                        <div class=" bg-neutral-200 dark:bg-neutral-600">
+                            <div
+                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                style={{ width: "99%" }}>
+                                99%
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='font-semibold text-white my-2'>React Js</p>
+                        <div class=" bg-neutral-200 dark:bg-neutral-600 ">
+                            <div
+                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                style={{ width: "99%" }}>
+                                99%
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='font-semibold text-white my-2'>React Native</p>
+                        <div class=" bg-neutral-200 dark:bg-neutral-600 ">
+                            <div
+                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                style={{ width: "99%" }}>
+                                99%
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='font-semibold text-white my-2'>Node Js</p>
+                        <div class=" bg-neutral-200 dark:bg-neutral-600 ">
+                            <div
+                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                style={{ width: "99%" }}>
+                                99%
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='font-semibold text-white my-2'>MongoDB</p>
+                        <div class=" bg-neutral-200 dark:bg-neutral-600 ">
+                            <div
+                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                style={{ width: "99%" }}>
+                                99%
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }
