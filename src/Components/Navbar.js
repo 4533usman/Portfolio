@@ -36,7 +36,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <div className={`${isOpen ? 'block' : 'hidden'} flex flex-col text-black bg-white p-5`}>
+            <div className={`${isOpen ? 'block' : 'hidden'} flex flex-col text-black bg-white p-5 `}>
                 <button onClick={toggleMenu} className='text-5xl font-semibold'>
                     <ion-icon name="close-outline"></ion-icon>
                 </button>
