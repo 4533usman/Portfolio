@@ -7,10 +7,11 @@ import {
 import Home from './Components/Home';
 import About from './Components/About';
 import Project from './Components/Project';
+import Footer from './Components/Footer';
 
 function App() {
   return (
-    <div className='bg-gradient-to-r from-violet-700 to-violet-500  w-full h-screen'>
+    <div className='bg-gradient-to-r from-teal-300 to-red-100 w-full h-screen'>
 
 
       <Router>
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/' element={<Home />} />
           <Route exact path='/about' element={<About />} />
           <Route exact path='/project' element={<Project />} />
+          <Route exact path='/contact' element={<Footer/>} />
         </Routes>
       </Router>
     </div>

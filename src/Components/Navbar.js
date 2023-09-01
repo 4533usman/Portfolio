@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     const toggleMenu = () => {
-        setIsOpen(!isOpen ? true : false)
+        setIsOpen(isOpen ? false : true)
         console.log(isOpen)
     };
     return (
@@ -16,16 +16,16 @@ const Navbar = () => {
                     <nav>
                         <div>
                             <ul className='flex justify-evenly items-center mx-10 font-semibold text-white cursor-pointer'>
-                                <li className=' transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3'><Link to='/'>Home</Link></li>
-                                <li className=' transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3'><Link to='/about'>About</Link></li>
-                                <li className=' transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3'><Link to='/project'>Projects</Link></li>
-                                <li className=' transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3'><Link to='/contact'>Contact</Link></li>
+                                <li className=' transition ease-in-out delay-150 duration-700 hover:bg-[#05BDC5]  rounded-sm px-3 py-1'><Link to='/'>Home</Link></li>
+                                <li className=' transition ease-in-out delay-150 duration-700 hover:bg-[#05BDC5]  rounded-sm px-3 py-1'><Link to='/about'>About</Link></li>
+                                <li className=' transition ease-in-out delay-150 duration-700 hover:bg-[#05BDC5]  rounded-sm px-3 py-1'><Link to='/project'>Projects</Link></li>
+                                <li className=' transition ease-in-out delay-150 duration-700 hover:bg-[#05BDC5]  rounded-sm px-3 py-1'><Link to='/contact'>Contact</Link></li>
                             </ul>
                         </div>
                     </nav>
                 </div>
                 <div className='flex justify-center gap-5 items-center'>
-                    <button className='bg-[#12121d] rounded-2xl px-3 py-3 text-white font-semibold text-sm flex justify-between items-center gap-3'>
+                    <button className=' transition ease-in-out delay-150 duration-700 hover:bg-[#05BDC5] rounded-sm px-3 py-3 text-white font-semibold text-sm flex justify-between items-center gap-3'>
                         <ion-icon className="text-xl" name="download-outline"></ion-icon>
                         Download Resume
                     </button>
@@ -36,14 +36,14 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <div className={`${isOpen ? 'block' : 'hidden'} flex flex-col text-black bg-white p-5 `}>
-                <button onClick={toggleMenu} className='text-5xl font-semibold'>
+            <div className={`${isOpen ? 'block' : 'hidden'} flex flex-col text-black bg-white p-5  font-semibold`}>
+                <button onClick={toggleMenu} className=' transition ease-in-out delay-150 duration-700 text-5xl font-semibold hover:text-[#05BDC5]'>
                     <ion-icon name="close-outline"></ion-icon>
                 </button>
-                <Link to="/" className="transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3">Home</Link>
-                <Link to="/about" className="transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3">About</Link>
-                <Link to="/project" className="transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3">Projects</Link>
-                <Link to="/contact" className="transition ease-in-out delay-150 duration-700 hover:text-gray-300  hover:bg-[#12121d]  rounded-lg p-3">Contact</Link>
+                <Link to="contact" className="transition ease-in-out delay-150 duration-700  hover:bg-[#05BDC5]  rounded-sm  px-3 py-1">Home</Link>
+                <Link to="/about" className="transition ease-in-out delay-150 duration-700   hover:bg-[#05BDC5]  rounded-sm  px-3 py-1">About</Link>
+                <Link to="/project" className="transition ease-in-out delay-150 duration-700  hover:bg-[#05BDC5]  rounded-sm px-3 py-1">Projects</Link>
+                <Link to="" className="transition ease-in-out delay-150 duration-700   hover:bg-[#05BDC5]  rounded-sm  px-3 py-1">Contact</Link>
             </div>
         </>
     )

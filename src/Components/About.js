@@ -1,40 +1,41 @@
 import React from 'react'
 import Navbar from './Navbar'
 import PortfolioImage from '../Images/Portfolio.png'
+import Footer from './Footer'
 
 const About = () => {
     return (
         // <div className=' bg-gradient-to-r from-cyan-500 to-blue-500 w-full'>
-        <div className='bg-gradient-to-r from-violet-700 to-violet-500'>
+        <div className='bg-gradient-to-r from-slate-900 to-slate-800'>
             <Navbar />
             <p className='text-center mt-10 text-5xl font-semibold text-white'>ABOUT</p>
             <p className='text-center text-2xl mb-10 text-white'>________</p>
             <div>
-                <div className='flex px-2 md:px-10  justify-around items-center mb-10 flex-col md:flex-row gap-4 md:gap-0 text-center text-white'>
-                    <div className=' flex-grow flex flex-col justify-center items-center'>
-                        <div className='bg-black rounded-full h-40 w-40 text-9xl flex flex-col justify-center items-center text-white p-5'>
+                <div className='flex px-2 md:px-10 justify-evenly   items-center mb-10 flex-col md:flex-row gap-4 md:gap-0 text-center text-white'>
+                    <div className=' flex flex-col justify-center items-center'>
+                        <div className='transition ease-in-out delay-150 duration-700 sh-40 w-40 text-9xl flex flex-col justify-center items-center text-white hover:text-[#05BDC5] p-5'>
                             <ion-icon name="speedometer-outline"></ion-icon>
                         </div>
-                        <p>Fast load times and lag free interaction, my highest priority.</p>
+                        <p className='w-60'>Fast load times and lag free interaction, my highest priority.</p>
                     </div>
-                    <div className=' flex-grow flex flex-col justify-center items-center'>
-                        <div className='bg-black rounded-full h-40 w-40 text-9xl flex flex-col justify-center items-center text-white p-5'>
+                    <div className=' flex flex-col justify-center items-center'>
+                        <div className='transition ease-in-out delay-150 duration-700 h-40 w-40 text-9xl flex flex-col justify-center items-center text-white p-5 hover:text-[#05BDC5]'>
                             <ion-icon name="tablet-landscape-outline"></ion-icon>
                         </div>
-                        <p>My layouts will work on any device, big or small.</p>
+                        <p className='w-60'>My layouts will work on any device, big or small.</p>
                     </div>
-                    <div className=' flex-grow flex flex-col justify-center items-center'>
-                        <div className='bg-black rounded-full h-40 w-40 text-9xl flex flex-col justify-center items-center text-white p-5'>
+                    <div className='  flex flex-col justify-center items-center'>
+                        <div className='transition ease-in-out delay-150 duration-700 h-40 w-40 text-9xl flex flex-col justify-center items-center text-white p-5 hover:text-[#05BDC5]'>
                             <ion-icon name="bulb-outline"></ion-icon>
                         </div>
-                        <p>Strong preference for easy to use, intuitive UX/UI.
+                        <p className='w-60'>Strong preference for easy to use, intuitive UX/UI.
                         </p>
                     </div>
-                    <div className=' flex-grow flex flex-col justify-center items-center'>
-                        <div className='bg-black rounded-full h-40 w-40 text-9xl flex flex-col justify-center items-center text-white p-5'>
+                    <div className='  flex flex-col justify-center items-center'>
+                        <div className=' transition ease-in-out delay-150 duration-700 h-40 w-40 text-9xl flex flex-col justify-center items-center text-white p-5 hover:text-[#05BDC5]'>
                             <ion-icon name="rocket-outline"></ion-icon>
                         </div>
-                        <p>Websites don't have to be static, I love making pages come to life.
+                        <p className='w-60'>Websites don't have to be static, I love making pages come to life.
                         </p>
                     </div>
                 </div>
@@ -61,7 +62,7 @@ const About = () => {
                         <p className='font-semibold text-white my-2'>HTML</p>
                         <div class=" bg-neutral-200 dark:bg-neutral-600">
                             <div
-                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                class=" bg-[#05BDC5] text-center text-white text-xs font-medium leading-none text-primary-100"
                                 style={{ width: "99%" }}>
                                 99%
                             </div>
@@ -71,7 +72,7 @@ const About = () => {
                         <p className='font-semibold text-white my-2'>CSS</p>
                         <div class=" bg-neutral-200 dark:bg-neutral-600 ">
                             <div
-                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                class=" bg-[#05BDC5] text-center text-white text-xs font-medium leading-none text-primary-100"
                                 style={{ width: "99%" }}>
                                 99%
                             </div>
@@ -81,7 +82,7 @@ const About = () => {
                         <p className='font-semibold text-white my-2'>Bootstrap</p>
                         <div class=" bg-neutral-200 dark:bg-neutral-600 ">
                             <div
-                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                class=" bg-[#05BDC5] text-center text-white text-xs font-medium leading-none text-primary-100"
                                 style={{ width: "99%" }}>
                                 99%
                             </div>
@@ -91,7 +92,7 @@ const About = () => {
                         <p className='font-semibold text-white my-2'>MUI</p>
                         <div class=" bg-neutral-200 dark:bg-neutral-600 ">
                             <div
-                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                class=" bg-[#05BDC5] text-center text-white text-xs font-medium leading-none text-primary-100"
                                 style={{ width: "99%" }}>
                                 99%
                             </div>
@@ -101,7 +102,7 @@ const About = () => {
                         <p className='font-semibold text-white my-2'>Tailwind CSS</p>
                         <div class=" bg-neutral-200 dark:bg-neutral-600 ">
                             <div
-                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                class=" bg-[#05BDC5] text-center text-white text-xs font-medium leading-none text-primary-100"
                                 style={{ width: "99%" }}>
                                 99%
                             </div>
@@ -114,7 +115,7 @@ const About = () => {
                         <p className='font-semibold text-white my-2'>JavaScript</p>
                         <div class=" bg-neutral-200 dark:bg-neutral-600">
                             <div
-                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                class=" bg-[#05BDC5] text-center text-white text-xs font-medium leading-none text-primary-100"
                                 style={{ width: "99%" }}>
                                 99%
                             </div>
@@ -124,7 +125,7 @@ const About = () => {
                         <p className='font-semibold text-white my-2'>React Js</p>
                         <div class=" bg-neutral-200 dark:bg-neutral-600 ">
                             <div
-                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                class=" bg-[#05BDC5] text-center text-white text-xs font-medium leading-none text-primary-100"
                                 style={{ width: "99%" }}>
                                 99%
                             </div>
@@ -134,7 +135,7 @@ const About = () => {
                         <p className='font-semibold text-white my-2'>React Native</p>
                         <div class=" bg-neutral-200 dark:bg-neutral-600 ">
                             <div
-                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                class=" bg-[#05BDC5] text-center text-white text-xs font-medium leading-none text-primary-100"
                                 style={{ width: "99%" }}>
                                 99%
                             </div>
@@ -144,7 +145,7 @@ const About = () => {
                         <p className='font-semibold text-white my-2'>Node Js</p>
                         <div class=" bg-neutral-200 dark:bg-neutral-600 ">
                             <div
-                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                class=" bg-[#05BDC5] text-center text-white text-xs font-medium leading-none text-primary-100"
                                 style={{ width: "99%" }}>
                                 99%
                             </div>
@@ -154,7 +155,7 @@ const About = () => {
                         <p className='font-semibold text-white my-2'>MongoDB</p>
                         <div class=" bg-neutral-200 dark:bg-neutral-600 ">
                             <div
-                                class=" bg-black text-center text-white text-xs font-medium leading-none text-primary-100"
+                                class=" bg-[#05BDC5] text-center text-white text-xs font-medium leading-none text-primary-100"
                                 style={{ width: "99%" }}>
                                 99%
                             </div>

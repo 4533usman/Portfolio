@@ -70,7 +70,7 @@ const Project = () => {
         setMernProjects(true);
     }
     return (
-        <div className='bg-gradient-to-r from-violet-700 to-violet-500'>
+        <div className='bg-gradient-to-r from-slate-900 to-slate-800'>
             <Navbar />
             <p className='text-center mt-10 text-5xl font-semibold text-white'>PROJECTS</p>
             <p className='text-center text-2xl mb-10 text-white'>________</p>
@@ -79,19 +79,19 @@ const Project = () => {
                 <nav>
                     <ul className='flex justify-evenly font-semibold text-white'>
                         <li onClick={AllProjects}>
-                            <Link className={`${allProjects ? 'bg-black' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>All</Link>
+                            <Link className={`${allProjects ? 'bg-[#05BDC5]' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>All</Link>
                         </li>
                         <li onClick={AllReactNativeProjects}>
-                            <Link className={`${reactnativeProjects ? 'bg-black' : 'bg-none'}  transition ease-in-out delay-150 duration-700 px-4 py-2 `}>React Native</Link>
+                            <Link className={`${reactnativeProjects ? 'bg-[#05BDC5]' : 'bg-none'}  transition ease-in-out delay-150 duration-700 px-4 py-2 `}>React Native</Link>
                         </li>
                         <li onClick={AllReactProjects}>
-                            <Link className={`${reactProjects ? 'bg-black' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>React Js</Link>
+                            <Link className={`${reactProjects ? 'bg-[#05BDC5]' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>React Js</Link>
                         </li>
                         <li onClick={AllMernProjects}>
-                            <Link className={`${mernProjects ? 'bg-black' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>MERN Stack</Link>
+                            <Link className={`${mernProjects ? 'bg-[#05BDC5]' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>MERN Stack</Link>
                         </li>
                         <li onClick={AllPythonProjects}>
-                            <Link className={`${pythonProjects ? 'bg-black' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>Python</Link>
+                            <Link className={`${pythonProjects ? 'bg-[#05BDC5]' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>Python</Link>
                         </li>
                     </ul>
                 </nav>
@@ -214,7 +214,6 @@ const Project = () => {
                 }
 
             </div>
-
         </div >
     )
 }
