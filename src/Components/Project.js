@@ -13,6 +13,14 @@ const Project = () => {
         { id: 6, name: "Usman6", category: 'mern' },
         { id: 7, name: "Usman7", category: 'python' },
         { id: 8, name: "Usman8", category: 'python' },
+        { id: 9, name: "Usman", category: 'reactjs' },
+        { id: 10, name: "Usman2", category: 'reactjs' },
+        { id: 11, name: "Usman3", category: 'reactnative' },
+        { id: 12, name: "Usman4", category: 'reactnative' },
+        { id: 13, name: "Usman5", category: 'mern' },
+        { id: 14, name: "Usman6", category: 'mern' },
+        { id: 15, name: "Usman7", category: 'python' },
+        { id: 16, name: "Usman8", category: 'python' },
     ]
     const toggleDropdown = () => {
         setIsOpen(isOpen ? false : true);
@@ -71,19 +79,19 @@ const Project = () => {
                 <nav>
                     <ul className='flex justify-evenly font-semibold text-white'>
                         <li onClick={AllProjects}>
-                            <Link className={`${allProjects ? 'bg-black' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 hover:bg-black hover:text-white`}>All</Link>
+                            <Link className={`${allProjects ? 'bg-black' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>All</Link>
                         </li>
                         <li onClick={AllReactNativeProjects}>
-                            <Link className={`${reactnativeProjects ? 'bg-black' : 'bg-none'}  transition ease-in-out delay-150 duration-700 px-4 py-2 hover:bg-black hover:text-white`}>React Native</Link>
+                            <Link className={`${reactnativeProjects ? 'bg-black' : 'bg-none'}  transition ease-in-out delay-150 duration-700 px-4 py-2 `}>React Native</Link>
                         </li>
                         <li onClick={AllReactProjects}>
-                            <Link className={`${reactProjects ? 'bg-black' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 hover:bg-black hover:text-white`}>React Js</Link>
+                            <Link className={`${reactProjects ? 'bg-black' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>React Js</Link>
                         </li>
                         <li onClick={AllMernProjects}>
-                            <Link className={`${mernProjects ? 'bg-black' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 hover:bg-black hover:text-white`}>MERN Stack</Link>
+                            <Link className={`${mernProjects ? 'bg-black' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>MERN Stack</Link>
                         </li>
                         <li onClick={AllPythonProjects}>
-                            <Link className={`${pythonProjects ? 'bg-black' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 hover:bg-black hover:text-white`}>Python</Link>
+                            <Link className={`${pythonProjects ? 'bg-black' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>Python</Link>
                         </li>
                     </ul>
                 </nav>
@@ -94,7 +102,7 @@ const Project = () => {
             {/* Navigation for the screen md and after */}
             <div className=' block md:hidden'>
                 <div className='flex flex-col mx-10 py-2  px-3 rounded-md  bg-white'>
-                    <div className='flex items-center font-semibold justify-between px-3'>
+                    <div className='flex items-center font-semibold justify-between px-3 cursor-pointer' onClick={toggleDropdown}>
 
                         {allProjects &&
                             <p>All</p>
@@ -112,7 +120,7 @@ const Project = () => {
                             <p>Python</p>
                         }
 
-                        <button onClick={toggleDropdown}><ion-icon className='cursor-pointer' name="chevron-down-outline"></ion-icon></button>
+                        <p><ion-icon className='cursor-pointer' name="chevron-down-outline"></ion-icon></p>
                     </div>
                     <div className={`${isOpen ? 'block' : 'hidden'}`}>
                         <ul className='flex flex-col font-semibold text-black gap-4 mt-2 '>
@@ -152,11 +160,11 @@ const Project = () => {
 
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 my-10 px-2 md:px-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2   gap-4 my-10 px-2 md:px-10 ">
                 {allProjects &&
                     data.map((e) => (
-                        <div className='flex flex-col rounded-lg gap-3 p-5'>
-                            <img class="h-auto max-w-full rounded-lg" src={gimg} alt="" />
+                        <div className='flex flex-col rounded-lg gap-3 p-5 '>
+                            <img className="h-auto max-w-full rounded-lg" src={gimg} alt="" />
                             <p className='text-white px-2'>{e.name}</p>
                         </div>
                     ))
