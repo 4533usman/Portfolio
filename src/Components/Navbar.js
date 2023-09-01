@@ -40,10 +40,10 @@ const Navbar = () => {
                 <button onClick={toggleMenu} className=' transition ease-in-out delay-150 duration-700 text-5xl font-semibold hover:text-[#05BDC5]'>
                     <ion-icon name="close-outline"></ion-icon>
                 </button>
-                <Link to="contact" className="transition ease-in-out delay-150 duration-700  hover:bg-[#05BDC5]  rounded-sm  px-3 py-1">Home</Link>
+                <Link to="/" className="transition ease-in-out delay-150 duration-700  hover:bg-[#05BDC5]  rounded-sm  px-3 py-1">Home</Link>
                 <Link to="/about" className="transition ease-in-out delay-150 duration-700   hover:bg-[#05BDC5]  rounded-sm  px-3 py-1">About</Link>
                 <Link to="/project" className="transition ease-in-out delay-150 duration-700  hover:bg-[#05BDC5]  rounded-sm px-3 py-1">Projects</Link>
-                <Link to="" className="transition ease-in-out delay-150 duration-700   hover:bg-[#05BDC5]  rounded-sm  px-3 py-1">Contact</Link>
+                <Link to="/contact" className="transition ease-in-out delay-150 duration-700   hover:bg-[#05BDC5]  rounded-sm  px-3 py-1">Contact</Link>
             </div>
         </>
     )

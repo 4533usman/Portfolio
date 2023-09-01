@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 
 const Footer = () => {
     return (
-        <div className=' bg-slate-900'>
+        <div className='bg-gradient-to-r from-slate-900 to-slate-800'>
             <Navbar />
             <div className=' px-2 md:px-10  h-screen flex justify-center items-center flex-col gap-6'>
                 <div>
@@ -23,22 +23,38 @@ const Footer = () => {
                         <button className='transition ease-in-out delay-150 duration-700 flex justify-center items-center border border-solid border-white text-white hover:bg-[#05BDC5] px-6 py-2 hover:border-[#05BDC5] font-semibold'>Submit</button>
                     </div>
                 </div>
-                <div>
+                {/* <div>
                     <div className=''>
                         <div className='w-96 flex justify-between m-auto text-3xl text-white'>
-                            <div className=' hover:text-[#05BDC5]'>
+                            <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
                                 <ion-icon name="logo-facebook"></ion-icon>
                             </div>
-                            <div className=' hover:text-[#05BDC5]'>
+                            <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
                                 <ion-icon name="logo-linkedin"></ion-icon>
                             </div>
-                            <div className=' hover:text-[#05BDC5]'>
+                            <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
                                 <ion-icon name="logo-github"></ion-icon>
                             </div>
-                            <div className=' hover:text-[#05BDC5]'>
+                            <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
                                 <ion-icon name="logo-twitter"></ion-icon>
                             </div>
                         </div>
+                    </div>
+                </div> */}
+            </div>
+            <div className=' px-2 md:px-10 py-10 bg-slate-900'>
+                <div className='w-96 flex justify-evenly m-auto text-3xl text-white'>
+                    <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </div>
+                    <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </div>
+                    <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
+                        <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                    <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
+                        <ion-icon name="logo-twitter"></ion-icon>
                     </div>
                 </div>
             </div>

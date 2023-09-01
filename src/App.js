@@ -11,7 +11,7 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
-    <div className='bg-gradient-to-r from-teal-300 to-red-100 w-full h-screen'>
+    <div className='bg-gradient-to-r from-slate-900 to-slate-800 w-full h-screen'>
 
 
       <Router>

@@ -1,8 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
 import PortfolioImage from '../Images/Portfolio.png'
-import Footer from './Footer'
-
 const About = () => {
     return (
         // <div className=' bg-gradient-to-r from-cyan-500 to-blue-500 w-full'>
@@ -13,7 +11,7 @@ const About = () => {
             <div>
                 <div className='flex px-2 md:px-10 justify-evenly   items-center mb-10 flex-col md:flex-row gap-4 md:gap-0 text-center text-white'>
                     <div className=' flex flex-col justify-center items-center'>
-                        <div className='transition ease-in-out delay-150 duration-700 sh-40 w-40 text-9xl flex flex-col justify-center items-center text-white hover:text-[#05BDC5] p-5'>
+                        <div className='transition ease-in-out delay-150 duration-700 h-40 w-40 text-9xl flex flex-col justify-center items-center text-white hover:text-[#05BDC5] p-5'>
                             <ion-icon name="speedometer-outline"></ion-icon>
                         </div>
                         <p className='w-60'>Fast load times and lag free interaction, my highest priority.</p>
@@ -40,7 +38,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className='flex px-2 md:px-10 gap-5 justify-center items-center md:flex-row flex-col mb-10'>
-                    <img src={PortfolioImage} alt='Image Not Found' height={300} width={300} className='rounded-full ' />
+                    <img src={PortfolioImage} alt=' Not Found' height={300} width={300} className='rounded-full ' />
                     <div className='flex flex-col gap-4'>
                         <p className=' text-2xl font-semibold text-white'>Who's this Guy?</p>
                         <p className='text-white text-justify'>
@@ -160,6 +158,22 @@ const About = () => {
                                 99%
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div className=' px-2 md:px-10 py-10 bg-slate-900 mt-10'>
+                <div className='w-96 flex justify-evenly m-auto text-3xl text-white'>
+                    <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </div>
+                    <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </div>
+                    <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
+                        <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                    <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
+                        <ion-icon name="logo-twitter"></ion-icon>
                     </div>
                 </div>
             </div>
