@@ -6,6 +6,7 @@ const Navbar = () => {
         setIsOpen(isOpen ? false : true)
         console.log(isOpen)
     };
+    const Cv_link = "https://docs.google.com/document/d/1-GqlwTEVML6T30GhYt7Arqjv5LsIza4g/edit?usp=sharing&ouid=100264052160316796644&rtpof=true&sd=true"
     return (
         <>
             <div className='flex justify-between items-center px-5 md:px-10 py-3'>
@@ -25,10 +26,10 @@ const Navbar = () => {
                     </nav>
                 </div>
                 <div className='flex justify-center gap-5 items-center'>
-                    <button className=' transition ease-in-out delay-150 duration-700 hover:bg-[#05BDC5] rounded-sm px-3 py-3 text-white font-semibold text-sm flex justify-between items-center gap-3'>
+                    <Link to={Cv_link} target='_blank' className=' transition ease-in-out delay-150 duration-700 hover:bg-[#05BDC5] rounded-sm px-3 py-3 text-white font-semibold text-sm flex justify-between items-center gap-3'>
                         <ion-icon className="text-xl" name="download-outline"></ion-icon>
                         Download Resume
-                    </button>
+                    </Link>
                     <div className='text-5xl text-white font-semibold'>
                         <button onClick={toggleMenu} className='block md:hidden'>
                             <ion-icon name="menu-outline"></ion-icon>
