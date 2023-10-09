@@ -26,7 +26,7 @@ const Navbar = () => {
                     </nav>
                 </div>
                 <div className='flex justify-center gap-5 items-center'>
-                    <Link to={Cv_link} target='_blank' className=' transition ease-in-out delay-150 duration-700 hover:bg-[#05BDC5] rounded-sm px-3 py-3 text-white font-semibold text-sm flex justify-between items-center gap-3'>
+                    <Link to={Cv_link} target='_blank' className=' transition ease-in-out delay-150 duration-700 bg-[#05BDC5] rounded-sm px-3 py-3 text-white font-semibold text-sm flex justify-between items-center gap-3'>
                         <ion-icon className="text-xl" name="download-outline"></ion-icon>
                         Download Resume
                     </Link>

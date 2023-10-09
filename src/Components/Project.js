@@ -1,75 +1,115 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
-import gimg from '../Images/download.jpeg'
+import Zoom from 'react-reveal/Zoom';
 import { Link } from 'react-router-dom';
+
 const Project = () => {
     const [isOpen, setIsOpen] = useState(false);
+
+    useEffect(() => {
+        // console.log(modelData)
+
+    }, [])
     const data = [
-        { id: 1, name: "Usman", category: 'reactjs' },
-        { id: 2, name: "Usman2", category: 'reactjs' },
-        { id: 3, name: "Usman3", category: 'reactnative' },
-        { id: 4, name: "Usman4", category: 'reactnative' },
-        { id: 5, name: "Usman5", category: 'mern' },
-        { id: 6, name: "Usman6", category: 'mern' },
-        { id: 7, name: "Usman7", category: 'python' },
-        { id: 8, name: "Usman8", category: 'python' },
-        { id: 9, name: "Usman", category: 'reactjs' },
-        { id: 10, name: "Usman2", category: 'reactjs' },
-        { id: 11, name: "Usman3", category: 'reactnative' },
-        { id: 12, name: "Usman4", category: 'reactnative' },
-        { id: 13, name: "Usman5", category: 'mern' },
-        { id: 14, name: "Usman6", category: 'mern' },
-        { id: 15, name: "Usman7", category: 'python' },
-        { id: 16, name: "Usman8", category: 'python' },
+        {
+            id: 1,
+            name: "Blog App",
+            category: 'reactjs',
+            description: "Blog App In Mern Stack. You can create your account on this App and login for the next time. You can also add your blog and read other blogs. You can also write comments on others Blogs. And also reacts on other blogs. You can recover your password through recovery email. You can also change your password while logged in.",
+            link:"https://github.com/4533usman/BlogApp_MERN-Stack"
+        },
+        {
+            d: 2,
+            name: "News App",
+            category: 'reactjs',
+            description: "Fetch News Articles from the Google News Api. Here is Different category of news you can apply the filter to find specific articles. For example technologies, sports, events, policies etc.",
+            link:"https://github.com/4533usman/News"
+        },
+        {
+            id: 3,
+            name: "Notes App",
+            category: 'reactjs',
+            description: "You can creata an account on notes web application. You can again login with credentials.You can add notes create and update your notes. You can also delete notes",
+            link:"https://github.com/4533usman/MERN-STACK"
+        },
+        {
+            id: 4,
+            name: "TextUtility App",
+            category: 'react',
+            description: "This is a text analyzer Web application. You can type text inside text box. Below the box you can see different button. Such as remove extra spaces, uppercase convert, lowercase convert, copy to clipboard, delete etc.",
+            link:"https://github.com/4533usman/Text-Utils"
+        },
+        {
+            id: 5,
+            name: "Online Store Apis",
+            category: 'nodejs',
+            description: "Here is E-Comerece Store API. For creating new products and user. A User can create an account on this store and then after log In and recover password",
+            link:"https://github.com/4533usman/E-Commerece-APIS"
+        },
+        {
+            id: 6,
+            name: "Library Management System",
+            category: 'nodejs',
+            description: "Student Library Management System Api. An admin can add students to a library management system. And issues differrent book to them. if they did not return book with in due time. They got finned",
+            link:"https://github.com/4533usman/E-Commerece-APIS"
+        },
+        {
+            id: 7,
+            name: "TextUtil",
+            category: 'reactnative',
+            description: "This is the android app similar to the web text analysis app. You can convert your text into uppercase and lowercase. You can also remove extra spaces from the text.",
+            link:"https://github.com/4533usman/TextUtilApp"
+        },
+        {
+            id: 8,
+            name: "To Do App",
+            category: 'reactnative',
+            description: "To Do App in react native. You can add different task you have to do on current day. Ann remove them from the the to do after done this task.",
+            link:"https://github.com/4533usman/Todoapp"
+        },
+        {
+            id: 9,
+            name: "Travel App",
+            category: 'reactnative',
+            description: "This is the traval app which is build using the google API. You can search differnt hotels during travelling and book an appiontment online",
+            link:"https://github.com/4533usman/TravelApp-ReactNative"
+        },
     ]
     const toggleDropdown = () => {
         setIsOpen(isOpen ? false : true);
         console.log(isOpen)
     }
-    useEffect(() => {
 
-    }, [])
     const [allProjects, setAllProjects] = useState(true);
     const [reactProjects, setReactProjects] = useState(false);
     const [reactnativeProjects, setReactNativeProjects] = useState(false);
     const [mernProjects, setMernProjects] = useState(false);
-    const [pythonProjects, setPythonProjects] = useState(false);
     const AllProjects = () => {
         setMernProjects(false);
         setReactNativeProjects(false);
         setReactProjects(false)
-        setPythonProjects(false);
         setAllProjects(true);
-    }
-    const AllPythonProjects = () => {
-        setAllProjects(false);
-        setMernProjects(false);
-        setReactNativeProjects(false);
-        setReactProjects(false)
-        setPythonProjects(true);
     }
     const AllReactNativeProjects = () => {
         setAllProjects(false);
         setMernProjects(false);
         setReactProjects(false)
-        setPythonProjects(false);
         setReactNativeProjects(true);
     }
     const AllReactProjects = () => {
         setAllProjects(false);
         setMernProjects(false);
         setReactNativeProjects(false);
-        setPythonProjects(false);
         setReactProjects(true)
     }
-    const AllMernProjects = () => {
+    const Nodejs = () => {
         setAllProjects(false);
         setReactNativeProjects(false);
         setReactProjects(false)
-        setPythonProjects(false);
         setMernProjects(true);
     }
     return (
+
         <div className='bg-gradient-to-r from-slate-900 to-slate-800'>
             <Navbar />
             <p className='text-center mt-10 text-5xl font-semibold text-white'>PROJECTS</p>
@@ -87,11 +127,8 @@ const Project = () => {
                         <li onClick={AllReactProjects}>
                             <Link className={`${reactProjects ? 'bg-[#05BDC5]' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>React Js</Link>
                         </li>
-                        <li onClick={AllMernProjects}>
-                            <Link className={`${mernProjects ? 'bg-[#05BDC5]' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>MERN Stack</Link>
-                        </li>
-                        <li onClick={AllPythonProjects}>
-                            <Link className={`${pythonProjects ? 'bg-[#05BDC5]' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>Python</Link>
+                        <li onClick={Nodejs}>
+                            <Link className={`${mernProjects ? 'bg-[#05BDC5]' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>Node Js</Link>
                         </li>
                     </ul>
                 </nav>
@@ -114,11 +151,9 @@ const Project = () => {
                             <p>React Js</p>
                         }
                         {mernProjects &&
-                            <p>MERN Stack</p>
+                            <p>Node Js</p>
                         }
-                        {pythonProjects &&
-                            <p>Python</p>
-                        }
+
 
                         <p><ion-icon className='cursor-pointer' name="chevron-down-outline"></ion-icon></p>
                     </div>
@@ -143,30 +178,40 @@ const Project = () => {
                                 <Link className='transition ease-in-out delay-150 duration-700 px-4 py-2'>React Js</Link>
                             </li>
                             <li onClick={() => {
-                                AllMernProjects()
+                                Nodejs()
                                 toggleDropdown()
                             }}>
-                                <Link className='transition ease-in-out delay-150 duration-700 px-4 py-2'>MERN Stack</Link>
-                            </li>
-                            <li onClick={() => {
-                                AllPythonProjects()
-                                toggleDropdown()
-                            }}>
-                                <Link className='transition ease-in-out delay-150 duration-700 px-4 py-2'>Python</Link>
+                                <Link className='transition ease-in-out delay-150 duration-700 px-4 py-2'>Node Js</Link>
                             </li>
                         </ul>
                     </div>
                 </div>
 
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2   gap-4 my-10 px-2 md:px-10 ">
+            <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2   gap-4 my-10 px-2 md:px-10 ">
                 {allProjects &&
                     data.map((e) => (
-                        <div className='flex flex-col rounded-lg gap-3 p-5 '>
-                            <img className="h-auto max-w-full rounded-lg" src={gimg} alt="" />
-                            <p className='text-white px-2'>{e.name}</p>
-                        </div>
+                        <Zoom>
+                            <div
+                                class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                                <div class="p-2">
+                                    <h5
+                                        class="mb-2 text-xl font-medium leading-tight dark:text-neutral-50 text-white">
+                                        {e.name}
+                                    </h5>
+                                    <p class="mb-4 text-base text-white dark:text-neutral-200 text-justify">
+                                        {e.description}
+                                    </p>
+                                    <Link to={e.link} target='_blank'
+                                        type="button"
+                                        class="inline-block rounded bg-[#05BDC5] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                                        data-te-ripple-init
+                                        data-te-ripple-color="light">
+                                        Go to Code
+                                    </Link>
+                                </div>
+                            </div>
+                        </Zoom>
                     ))
                 }
 
@@ -174,42 +219,82 @@ const Project = () => {
                     data
                         .filter((item) => item.category === 'reactjs')
                         .map((e) => (
-                            <div className='flex flex-col rounded-lg gap-3 p-5' key={e.id}>
-                                <img className="h-auto max-w-full rounded-lg" src={gimg} alt="" />
-                                <p className='text-white px-2'>{e.name}</p>
-                            </div>
+                            <Zoom>
+                                <div
+                                    class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                                    <div class="p-2">
+                                        <h5
+                                            class="mb-2 text-xl font-medium leading-tight dark:text-neutral-50 text-white">
+                                            {e.name}
+                                        </h5>
+                                        <p class="mb-4 text-base text-white dark:text-neutral-200">
+                                            {e.description}
+                                        </p>
+                                        <Link to={e.link} target='_blank'
+                                            type="button"
+                                            class="inline-block rounded bg-[#05BDC5] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                                            data-te-ripple-init
+                                            data-te-ripple-color="light">
+                                            Read More . . .
+                                        </Link>
+                                    </div>
+                                </div>
+                            </Zoom>
                         ))
                 )}
                 {reactnativeProjects &&
                     data
                         .filter((item) => item.category === 'reactnative')
                         .map((e) => (
-                            <div className='flex flex-col rounded-lg gap-3 p-5' key={e.id}>
-                                <img className="h-auto max-w-full rounded-lg" src={gimg} alt="" />
-                                <p className='text-white px-2'>{e.name}</p>
-                            </div>
+                            <Zoom>
+                                <div
+                                    class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                                    <div class="p-2">
+                                        <h5
+                                            class="mb-2 text-xl font-medium leading-tight dark:text-neutral-50 text-white">
+                                            {e.name}
+                                        </h5>
+                                        <p class="mb-4 text-base text-white dark:text-neutral-200">
+                                            {e.description}
+                                        </p>
+                                        <Link to={e.link} target='_blank'
+                                            type="button"
+                                            class="inline-block rounded bg-[#05BDC5] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                                            data-te-ripple-init
+                                            data-te-ripple-color="light">
+                                            Read More . . .
+                                        </Link>
+                                    </div>
+                                </div>
+                            </Zoom>
                         ))
                 }
 
                 {mernProjects &&
                     data
-                        .filter((item) => item.category === 'mern')
+                        .filter((item) => item.category === 'nodejs')
                         .map((e) => (
-                            <div className='flex flex-col rounded-lg gap-3 p-5' key={e.id}>
-                                <img className="h-auto max-w-full rounded-lg" src={gimg} alt="" />
-                                <p className='text-white px-2'>{e.name}</p>
-                            </div>
-                        ))
-                }
-
-                {pythonProjects &&
-                    data
-                        .filter((item) => item.category === 'python')
-                        .map((e) => (
-                            <div className='flex flex-col rounded-lg gap-3 p-5' key={e.id}>
-                                <img className="h-auto max-w-full rounded-lg" src={gimg} alt="" />
-                                <p className='text-white px-2'>{e.name}</p>
-                            </div>
+                            <Zoom>
+                                <div
+                                    class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                                    <div class="p-2">
+                                        <h5
+                                            class="mb-2 text-xl font-medium leading-tight dark:text-neutral-50 text-white">
+                                            {e.name}
+                                        </h5>
+                                        <p class="mb-4 text-base text-white dark:text-neutral-200">
+                                            {e.description}
+                                        </p>
+                                        <Link to={e.link} target='_blank'
+                                            type="button"
+                                            class="inline-block rounded bg-[#05BDC5] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                                            data-te-ripple-init
+                                            data-te-ripple-color="light">
+                                            Read More . . .
+                                        </Link>
+                                    </div>
+                                </div>
+                            </Zoom>
                         ))
                 }
 
@@ -231,6 +316,7 @@ const Project = () => {
                 </div>
             </div>
         </div >
+
     )
 }
 
