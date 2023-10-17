@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import FooterLinks from './FooterLinks'
 
 const Footer = () => {
     return (
@@ -42,22 +43,7 @@ const Footer = () => {
                     </div>
                 </div> */}
             </div>
-            <div className=' px-2 md:px-10 py-10 bg-slate-900'>
-                <div className='w-96 flex justify-evenly m-auto text-3xl text-white'>
-                    <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </div>
-                    <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </div>
-                    <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
-                        <ion-icon name="logo-github"></ion-icon>
-                    </div>
-                    <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </div>
-                </div>
-            </div>
+            <FooterLinks/>
         </div>
     )
 }
