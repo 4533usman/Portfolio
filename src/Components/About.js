@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import PortfolioImage from '../Images/Portfolio.png'
-import Slide from 'react-reveal/Slide';
+
 const About = () => {
     return (
         // <div className=' bg-gradient-to-r from-cyan-500 to-blue-500 w-full'>
@@ -11,23 +11,23 @@ const About = () => {
             <p className='text-center text-2xl mb-10 text-white'>________</p>
             <div>
                 <div className='flex px-2 md:px-10 justify-evenly   items-center mb-10 flex-col md:flex-row gap-4 md:gap-0 text-center text-white'>
-                    <Slide left>
+                    
                         <div className=' flex flex-col justify-center items-center'>
                             <div className='transition ease-in-out delay-150 duration-700 h-40 w-40 text-9xl flex flex-col justify-center items-center text-white hover:text-[#05BDC5] p-5'>
                                 <ion-icon name="speedometer-outline"></ion-icon>
                             </div>
                             <p className='w-60'>Fast load times and lag free interaction, my highest priority.</p>
                         </div>
-                    </Slide>
-                    <Slide left>
+                    
+                    
                         <div className=' flex flex-col justify-center items-center'>
                             <div className='transition ease-in-out delay-150 duration-700 h-40 w-40 text-9xl flex flex-col justify-center items-center text-white p-5 hover:text-[#05BDC5]'>
                                 <ion-icon name="tablet-landscape-outline"></ion-icon>
                             </div>
                             <p className='w-60'>My layouts will work on any device, big or small.</p>
                         </div>
-                    </Slide>
-                    <Slide left>
+                    
+                    
                         <div className='  flex flex-col justify-center items-center'>
                             <div className='transition ease-in-out delay-150 duration-700 h-40 w-40 text-9xl flex flex-col justify-center items-center text-white p-5 hover:text-[#05BDC5]'>
                                 <ion-icon name="bulb-outline"></ion-icon>
@@ -35,8 +35,8 @@ const About = () => {
                             <p className='w-60'>Strong preference for easy to use, intuitive UX/UI.
                             </p>
                         </div>
-                    </Slide>
-                    <Slide left>
+                    
+                    
                         <div className='  flex flex-col justify-center items-center'>
                             <div className=' transition ease-in-out delay-150 duration-700 h-40 w-40 text-9xl flex flex-col justify-center items-center text-white p-5 hover:text-[#05BDC5]'>
                                 <ion-icon name="rocket-outline"></ion-icon>
@@ -44,13 +44,13 @@ const About = () => {
                             <p className='w-60'>Websites don't have to be static, I love making pages come to life.
                             </p>
                         </div>
-                    </Slide>
+                    
                 </div>
                 <div className='flex px-2 md:px-10 gap-5 justify-center items-center md:flex-row flex-col mb-10'>
-                    <Slide left>
+                    
                         <img src={PortfolioImage} alt=' Not Found' height={300} width={300} className='rounded-full' />
-                    </Slide>
-                    <Slide left>
+                    
+                    
                         <div className='flex flex-col gap-4'>
                             <p className=' text-2xl font-semibold text-white'>Who's this Guy?</p>
                             <p className='text-white text-justify'>
@@ -61,7 +61,7 @@ const About = () => {
                                 If you are looking for a passionate software engineer who can solve real-world problems and develops quality products for customers. Then I am excited to connect and discuss opportunities with you
                             </p>
                         </div>
-                    </Slide>
+                    
                 </div>
 
             </div>
@@ -69,7 +69,7 @@ const About = () => {
             <p className='text-center text-xl mb-10 text-white'>________</p>
             <div className='flex flex-col md:flex-row px-2 md:px-10 gap-0 md:gap-5'>
                 <div className='grow'>
-                    <Slide left>
+                    
                         <div>
                             <p className='font-semibold text-white my-2'>HTML</p>
                             <div class=" bg-neutral-200 dark:bg-neutral-600">
@@ -82,8 +82,8 @@ const About = () => {
 
                             </div>
                         </div>
-                    </Slide>
-                    <Slide left>
+                    
+                    
                         <div>
                             <p className='font-semibold text-white my-2'>CSS</p>
                             <div class=" bg-neutral-200 dark:bg-neutral-600 ">
@@ -94,8 +94,8 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                    </Slide>
-                    <Slide left>
+                    
+                    
                         <div>
                             <p className='font-semibold text-white my-2'>Bootstrap</p>
                             <div class=" bg-neutral-200 dark:bg-neutral-600 ">
@@ -106,8 +106,8 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                    </Slide>
-                    <Slide left>
+                    
+                    
                         <div>
                             <p className='font-semibold text-white my-2'>MUI</p>
                             <div class=" bg-neutral-200 dark:bg-neutral-600 ">
@@ -118,8 +118,8 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                    </Slide>
-                    <Slide left>
+                    
+                    
                         <div>
                             <p className='font-semibold text-white my-2'>Tailwind CSS</p>
                             <div class=" bg-neutral-200 dark:bg-neutral-600 ">
@@ -130,8 +130,8 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                    </Slide>
-                    <Slide left>
+                    
+                    
                         <div>
                             <p className='font-semibold text-white my-2'>SQL</p>
                             <div class=" bg-neutral-200 dark:bg-neutral-600 ">
@@ -142,10 +142,10 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                    </Slide>
+                    
                 </div>
                 <div className='grow'>
-                    <Slide right>
+                    
                         <div>
                             <p className='font-semibold text-white my-2'>JavaScript</p>
                             <div class=" bg-neutral-200 dark:bg-neutral-600">
@@ -156,8 +156,8 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                    </Slide>
-                    <Slide right>
+                    
+                    
                         <div>
                             <p className='font-semibold text-white my-2'>React Js</p>
                             <div class=" bg-neutral-200 dark:bg-neutral-600 ">
@@ -168,8 +168,8 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                    </Slide>
-                    <Slide right>
+                    
+                    
                         <div>
                             <p className='font-semibold text-white my-2'>React Native</p>
                             <div class=" bg-neutral-200 dark:bg-neutral-600 ">
@@ -180,8 +180,8 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                    </Slide>
-                    <Slide right>
+                    
+                    
                         <div>
                             <p className='font-semibold text-white my-2'>Node Js</p>
                             <div class=" bg-neutral-200 dark:bg-neutral-600 ">
@@ -192,8 +192,8 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                    </Slide>
-                    <Slide right>
+                    
+                    
                         <div>
                             <p className='font-semibold text-white my-2'>MongoDB</p>
                             <div class=" bg-neutral-200 dark:bg-neutral-600 ">
@@ -204,7 +204,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                    </Slide>
+                    
                 </div>
             </div>
             <div className=' px-2 md:px-10 py-10 bg-slate-900 mt-10'>
