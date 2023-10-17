@@ -11,12 +11,12 @@ const FooterLinks = () => {
                     </Link>
                 </div>
                 <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
-                    <Link to="www.linkedin.com/in/usmankhalil4533">
+                    <Link to="www.linkedin.com/in/usmankhalil4533" target='_blanck'>
                         <ion-icon name="logo-linkedin"></ion-icon>
                     </Link>
                 </div>
                 <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
-                    <Link to="https://github.com/4533usman">
+                    <Link to="https://github.com/4533usman" target='_blanck'>
                         <ion-icon name="logo-github"></ion-icon>
                     </Link>
                 </div>
