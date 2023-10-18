@@ -11,8 +11,8 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
-    <div className='bg-gradient-to-r from-slate-900 to-slate-800 w-full h-screen'>
-    {/* // <div className='w-full h-screen bg-green-200'> */}
+    // <div className='bg-gradient-to-r from-slate-900 to-slate-800 w-full h-screen'>
+     <div className='w-full h-screen'> 
       <Router>
         <Routes>
           <Route exact path='/' element={<Home />} />

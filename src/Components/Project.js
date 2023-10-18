@@ -110,25 +110,25 @@ const Project = () => {
     }
     return (
 
-        <div className='bg-gradient-to-r from-slate-900 to-slate-800'>
+        <div className=''>
             <Navbar />
-            <p className='text-center mt-10 text-5xl font-semibold text-white'>PROJECTS</p>
-            <p className='text-center text-2xl mb-10 text-white'>________</p>
+            <p className='text-center mt-10 text-5xl font-semibold text-[#7ED957]'>PROJECTS</p>
+            <p className='text-center text-2xl mb-10 text-[#7ED957]'>________</p>
             {/* Navigation for large screen  */}
             <div className=' px-2 md:px-10 hidden md:block'>
                 <nav>
-                    <ul className='flex justify-evenly font-semibold text-white'>
+                    <ul className='flex justify-evenly font-semibold text-[black]'>
                         <li onClick={AllProjects}>
-                            <Link className={`${allProjects ? 'bg-[#05BDC5]' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>All</Link>
+                            <Link className={`${allProjects ? 'bg-[#7ED957]' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>All</Link>
                         </li>
                         <li onClick={AllReactNativeProjects}>
-                            <Link className={`${reactnativeProjects ? 'bg-[#05BDC5]' : 'bg-none'}  transition ease-in-out delay-150 duration-700 px-4 py-2 `}>React Native</Link>
+                            <Link className={`${reactnativeProjects ? 'bg-[#7ED957]' : 'bg-none'}  transition ease-in-out delay-150 duration-700 px-4 py-2 `}>React Native</Link>
                         </li>
                         <li onClick={AllReactProjects}>
-                            <Link className={`${reactProjects ? 'bg-[#05BDC5]' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>React Js</Link>
+                            <Link className={`${reactProjects ? 'bg-[#7ED957]' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>React Js</Link>
                         </li>
                         <li onClick={Nodejs}>
-                            <Link className={`${mernProjects ? 'bg-[#05BDC5]' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>Node Js</Link>
+                            <Link className={`${mernProjects ? 'bg-[#7ED957]' : 'bg-none'} transition ease-in-out delay-150 duration-700 px-4 py-2 `}>Node Js</Link>
                         </li>
                     </ul>
                 </nav>
@@ -192,24 +192,10 @@ const Project = () => {
                 {allProjects &&
                     data.map((e) => (
 
-                        <div
-                            class="block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-                            <div class="p-2">
-                                <h5
-                                    class="mb-2 text-xl font-medium leading-tight dark:text-neutral-50 text-white">
-                                    {e.name}
-                                </h5>
-                                <p class="mb-4 text-base text-white dark:text-neutral-200 text-justify">
-                                    {e.description}
-                                </p>
-                                <Link to={e.link} target='_blank'
-                                    type="button"
-                                    class="inline-block rounded bg-[#05BDC5] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                                    data-te-ripple-init
-                                    data-te-ripple-color="light">
-                                    Go to Code
-                                </Link>
-                            </div>
+                        <div className='flex flex-col gap-4 items-start shadow-xl px-2 py-3 hover:shadow-inner '>
+                            <h className="font-bold">{e.name}</h>
+                            <p className='text-justify'>{e.description}</p>
+                            <Link to={e.link} target='_blank' className='bg-[#7ED957] text-white px-3 py-2 rounded-md '>Read More ....</Link>
                         </div>
 
                     ))
@@ -220,25 +206,11 @@ const Project = () => {
                         .filter((item) => item.category === 'reactjs')
                         .map((e) => (
 
-                            <div
-                                class="block rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-                                <div class="p-2">
-                                    <h5
-                                        class="mb-2 text-xl font-medium leading-tight dark:text-neutral-50 text-white">
-                                        {e.name}
-                                    </h5>
-                                    <p class="mb-4 text-base text-white dark:text-neutral-200">
-                                        {e.description}
-                                    </p>
-                                    <Link to={e.link} target='_blank'
-                                        type="button"
-                                        class="inline-block rounded bg-[#05BDC5] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                                        data-te-ripple-init
-                                        data-te-ripple-color="light">
-                                        Read More . . .
-                                    </Link>
-                                </div>
-                            </div>
+                            <div className='flex flex-col gap-4 items-start shadow-xl px-2 py-3 hover:shadow-inner '>
+                            <h className="font-bold">{e.name}</h>
+                            <p className='text-justify'>{e.description}</p>
+                            <Link to={e.link} target='_blank' className='bg-[#7ED957] text-white px-3 py-2 rounded-md '>Read More ....</Link>
+                        </div>
 
                         ))
                 )}
@@ -247,25 +219,11 @@ const Project = () => {
                         .filter((item) => item.category === 'reactnative')
                         .map((e) => (
 
-                            <div
-                                class="block rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-                                <div class="p-2">
-                                    <h5
-                                        class="mb-2 text-xl font-medium leading-tight dark:text-neutral-50 text-white">
-                                        {e.name}
-                                    </h5>
-                                    <p class="mb-4 text-base text-white dark:text-neutral-200">
-                                        {e.description}
-                                    </p>
-                                    <Link to={e.link} target='_blank'
-                                        type="button"
-                                        class="inline-block rounded bg-[#05BDC5] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                                        data-te-ripple-init
-                                        data-te-ripple-color="light">
-                                        Read More . . .
-                                    </Link>
-                                </div>
-                            </div>
+                            <div className='flex flex-col gap-4 items-start shadow-xl px-2 py-3 hover:shadow-inner '>
+                            <h className="font-bold">{e.name}</h>
+                            <p className='text-justify'>{e.description}</p>
+                            <Link to={e.link} target='_blank' className='bg-[#7ED957] text-white px-3 py-2 rounded-md '>Read More ....</Link>
+                        </div>
 
                         ))
                 }
@@ -275,25 +233,11 @@ const Project = () => {
                         .filter((item) => item.category === 'nodejs')
                         .map((e) => (
 
-                            <div
-                                class="block rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-                                <div class="p-2">
-                                    <h5
-                                        class="mb-2 text-xl font-medium leading-tight dark:text-neutral-50 text-white">
-                                        {e.name}
-                                    </h5>
-                                    <p class="mb-4 text-base text-white dark:text-neutral-200">
-                                        {e.description}
-                                    </p>
-                                    <Link to={e.link} target='_blank'
-                                        type="button"
-                                        class="inline-block rounded bg-[#05BDC5] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                                        data-te-ripple-init
-                                        data-te-ripple-color="light">
-                                        Read More . . .
-                                    </Link>
-                                </div>
-                            </div>
+                            <div className='flex flex-col gap-4 items-start shadow-xl px-2 py-3 hover:shadow-inner '>
+                            <h className="font-bold">{e.name}</h>
+                            <p className='text-justify'>{e.description}</p>
+                            <Link to={e.link} target='_blank' className='bg-[#7ED957] text-white px-3 py-2 rounded-md '>Read More ....</Link>
+                        </div>
 
                         ))
                 }

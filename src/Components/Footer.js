@@ -4,46 +4,30 @@ import FooterLinks from './FooterLinks'
 
 const Footer = () => {
     return (
-        <div className='bg-gradient-to-r from-slate-900 to-slate-800'>
+        <div className=''>
             <Navbar />
-            <div className=' px-2 md:px-10  h-screen flex justify-center items-center flex-col gap-6'>
+            <div className=' px-2 md:px-10  h-screen flex justify-center items-center flex-col gap-3'>
                 <div>
-                    <p className='text-center text-5xl font-semibold text-white'>CONTACT</p>
-                    <p className='text-center text-2xl mb-5 text-white'>___________</p>
-                    <p className='text-center my-3 font-semibold text-[#05BDC5]'>Have A Question? Or want to work together</p>
+                    <p className='text-center text-5xl font-semibold text-[#7ED957]'>CONTACT</p>
+                    <p className='text-center text-2xl mb-5 text-[#7ED957]'>___________</p>
                 </div>
+                
                 <div>
+                    <p className='text-center my-3 font-semibold text-[#7ED957]'>Have A Question? Or want to work together</p>
                     <form className='flex flex-col gap-2 w-96 m-auto'>
-                        <input placeholder='Name' type="text" className="bg-slate-600 px-2 py-1 rounded-sm" />
-                        <input placeholder='E-mail' type="text" className="bg-slate-600 px-2 py-1 rounded-sm" />
-                        <textarea placeholder='Your Message' type="text" className="bg-slate-600 px-2 py-1 rounded-sm" />
+                        <input placeholder='Name' type="text" className=" border-2 border-[#7ED957] px-2 py-1 rounded-sm" />
+                        <input placeholder='E-mail' type="text" className="border-2 border-[#7ED957] px-2 py-1 rounded-sm" />
+                        <textarea placeholder='Your Message' type="text" className="border-2 border-[#7ED957] px-2 py-1 rounded-sm" />
                     </form>
                 </div>
                 <div>
                     <div className='flex w-96 m-auto justify-end'>
-                        <button className='transition ease-in-out delay-150 duration-700 flex justify-center items-center border border-solid border-white text-white hover:bg-[#05BDC5] px-6 py-2 hover:border-[#05BDC5] font-semibold'>Submit</button>
+                        <button className='transition ease-in-out delay-150 duration-700 flex justify-center items-center border border-solid border-[#7ED957] text-[#7ED957] hover:bg-[#7ED957] hover:text-[white] px-6 py-2 hover:border-[#7ED957] font-semibold'>Submit</button>
                     </div>
                 </div>
-                {/* <div>
-                    <div className=''>
-                        <div className='w-96 flex justify-between m-auto text-3xl text-white'>
-                            <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
-                                <ion-icon name="logo-facebook"></ion-icon>
-                            </div>
-                            <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
-                                <ion-icon name="logo-linkedin"></ion-icon>
-                            </div>
-                            <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
-                                <ion-icon name="logo-github"></ion-icon>
-                            </div>
-                            <div className=' hover:text-[#05BDC5] transition ease-in-out delay-150 duration-700 cursor-pointer'>
-                                <ion-icon name="logo-twitter"></ion-icon>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
+        
             </div>
-            <FooterLinks/>
+            <FooterLinks />
         </div>
     )
 }
